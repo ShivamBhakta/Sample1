@@ -5,6 +5,8 @@ $query="select * from student where rollno=$r";
 $res=mysql_query($query,$conn);
 $row=mysql_fetch_array($res);
 ?>
+
+
 <form method="post">
 <input type="hidden" name="rno" value="<?php echo $row[0];?>">
 <table>
